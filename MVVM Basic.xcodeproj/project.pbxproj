@@ -3,27 +3,81 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931025DD24BDB69D00874EB0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931025DB24BDB69D00874EB0 /* DetailViewController.swift */; };
+		931025DE24BDB69D00874EB0 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931025DC24BDB69D00874EB0 /* DetailViewController.xib */; };
+		9334375224C14B9E0009BB11 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9334375024C14B9E0009BB11 /* MovieCollectionViewCell.swift */; };
+		9334375324C14B9E0009BB11 /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9334375124C14B9E0009BB11 /* MovieCollectionViewCell.xib */; };
+		933494A824C8370600944AA9 /* ActorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933494A624C8370600944AA9 /* ActorCollectionViewCell.swift */; };
+		933494A924C8370600944AA9 /* ActorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 933494A724C8370600944AA9 /* ActorCollectionViewCell.xib */; };
+		933494AC24C8388A00944AA9 /* ActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933494AB24C8388A00944AA9 /* ActorViewModel.swift */; };
+		936963C924CCA4CA0094F047 /* RealamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936963C824CCA4CA0094F047 /* RealamManager.swift */; };
 		9376D9B324B7FDD8008C7FD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9B224B7FDD8008C7FD0 /* AppDelegate.swift */; };
-		9376D9B524B7FDD8008C7FD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9B424B7FDD8008C7FD0 /* SceneDelegate.swift */; };
-		9376D9B724B7FDD8008C7FD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9B624B7FDD8008C7FD0 /* ViewController.swift */; };
-		9376D9BA24B7FDD8008C7FD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9B824B7FDD8008C7FD0 /* Main.storyboard */; };
 		9376D9BC24B7FDD9008C7FD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9BB24B7FDD9008C7FD0 /* Assets.xcassets */; };
 		9376D9BF24B7FDD9008C7FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9BD24B7FDD9008C7FD0 /* LaunchScreen.storyboard */; };
+		9376D9CB24B80951008C7FD0 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9CA24B80951008C7FD0 /* Contants.swift */; };
+		9376D9CE24B80FCE008C7FD0 /* DrasboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9CC24B80FCE008C7FD0 /* DrasboardViewController.swift */; };
+		9376D9CF24B80FCE008C7FD0 /* DrasboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9CD24B80FCE008C7FD0 /* DrasboardViewController.xib */; };
+		9376D9D224B81256008C7FD0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9D024B81256008C7FD0 /* HomeViewController.swift */; };
+		9376D9D324B81256008C7FD0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9D124B81256008C7FD0 /* HomeViewController.xib */; };
+		9376D9D524B812D3008C7FD0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9D424B812D3008C7FD0 /* Movie.swift */; };
+		9376D9D724B812F4008C7FD0 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9D624B812F4008C7FD0 /* Actor.swift */; };
+		9376D9DE24B813E0008C7FD0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9DC24B813E0008C7FD0 /* SearchViewController.swift */; };
+		9376D9DF24B813E0008C7FD0 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9DD24B813E0008C7FD0 /* SearchViewController.xib */; };
+		9376D9E224B813F1008C7FD0 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9E024B813F1008C7FD0 /* FavoriteViewController.swift */; };
+		9376D9E324B813F1008C7FD0 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9E124B813F1008C7FD0 /* FavoriteViewController.xib */; };
+		9376D9E624B813FD008C7FD0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9E424B813FD008C7FD0 /* ProfileViewController.swift */; };
+		9376D9E724B813FD008C7FD0 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9376D9E524B813FD008C7FD0 /* ProfileViewController.xib */; };
+		9376D9E924B81C16008C7FD0 /* Extension+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9E824B81C16008C7FD0 /* Extension+Codable.swift */; };
+		9376D9EB24B81C35008C7FD0 /* Extension+TextField+KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9EA24B81C35008C7FD0 /* Extension+TextField+KeyBoard.swift */; };
+		9376D9EF24B82362008C7FD0 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9EE24B82362008C7FD0 /* Provider.swift */; };
+		9376D9F124B88420008C7FD0 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9F024B88420008C7FD0 /* BaseViewModel.swift */; };
+		9376D9F324B8849F008C7FD0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376D9F224B8849F008C7FD0 /* SearchViewModel.swift */; };
+		93B9739024BD4F79009A08B6 /* SwiftMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B9738F24BD4F79009A08B6 /* SwiftMessageManager.swift */; };
+		93B9739224BD5542009A08B6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B9739124BD5542009A08B6 /* Result.swift */; };
+		E80D4093E043434C2CE2D032 /* Pods_MVVM_Basic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33D3F6C4B8AEF6EAB320C3FC /* Pods_MVVM_Basic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9376D9AF24B7FDD8008C7FD0 /* MVVM Basic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Basic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D3F6C4B8AEF6EAB320C3FC /* Pods_MVVM_Basic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Basic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F07397CAA6048D43BF9CAE6 /* Pods-MVVM Basic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Basic.release.xcconfig"; path = "Target Support Files/Pods-MVVM Basic/Pods-MVVM Basic.release.xcconfig"; sourceTree = "<group>"; };
+		931025DB24BDB69D00874EB0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		931025DC24BDB69D00874EB0 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		9334375024C14B9E0009BB11 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		9334375124C14B9E0009BB11 /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		933494A624C8370600944AA9 /* ActorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorCollectionViewCell.swift; sourceTree = "<group>"; };
+		933494A724C8370600944AA9 /* ActorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorCollectionViewCell.xib; sourceTree = "<group>"; };
+		933494AB24C8388A00944AA9 /* ActorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorViewModel.swift; sourceTree = "<group>"; };
+		936963C824CCA4CA0094F047 /* RealamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealamManager.swift; sourceTree = "<group>"; };
+		9376D9AF24B7FDD8008C7FD0 /* Kho Phim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kho Phim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9376D9B224B7FDD8008C7FD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9376D9B424B7FDD8008C7FD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9376D9B624B7FDD8008C7FD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9376D9B924B7FDD8008C7FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9376D9BB24B7FDD9008C7FD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9376D9BE24B7FDD9008C7FD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9376D9C024B7FDD9008C7FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9376D9CA24B80951008C7FD0 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		9376D9CC24B80FCE008C7FD0 /* DrasboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrasboardViewController.swift; path = "MVVM Basic/DrasboardViewController.swift"; sourceTree = SOURCE_ROOT; };
+		9376D9CD24B80FCE008C7FD0 /* DrasboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrasboardViewController.xib; path = "MVVM Basic/DrasboardViewController.xib"; sourceTree = SOURCE_ROOT; };
+		9376D9D024B81256008C7FD0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9376D9D124B81256008C7FD0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9376D9D424B812D3008C7FD0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9376D9D624B812F4008C7FD0 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		9376D9DC24B813E0008C7FD0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9376D9DD24B813E0008C7FD0 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		9376D9E024B813F1008C7FD0 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		9376D9E124B813F1008C7FD0 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		9376D9E424B813FD008C7FD0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9376D9E524B813FD008C7FD0 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9376D9E824B81C16008C7FD0 /* Extension+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Codable.swift"; sourceTree = "<group>"; };
+		9376D9EA24B81C35008C7FD0 /* Extension+TextField+KeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextField+KeyBoard.swift"; sourceTree = "<group>"; };
+		9376D9EE24B82362008C7FD0 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		9376D9F024B88420008C7FD0 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		9376D9F224B8849F008C7FD0 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		93B9738F24BD4F79009A08B6 /* SwiftMessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessageManager.swift; sourceTree = "<group>"; };
+		93B9739124BD5542009A08B6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AC9F5774F892154A523F95C7 /* Pods-MVVM Basic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Basic.debug.xcconfig"; path = "Target Support Files/Pods-MVVM Basic/Pods-MVVM Basic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +85,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80D4093E043434C2CE2D032 /* Pods_MVVM_Basic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0696E274B56A7C5391A92510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33D3F6C4B8AEF6EAB320C3FC /* Pods_MVVM_Basic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		931025D924BDB67500874EB0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				931025DB24BDB69D00874EB0 /* DetailViewController.swift */,
+				931025DC24BDB69D00874EB0 /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9334374E24C14B620009BB11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9334375024C14B9E0009BB11 /* MovieCollectionViewCell.swift */,
+				9334375124C14B9E0009BB11 /* MovieCollectionViewCell.xib */,
+				933494A624C8370600944AA9 /* ActorCollectionViewCell.swift */,
+				933494A724C8370600944AA9 /* ActorCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9334374F24C14B6B0009BB11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				931025D924BDB67500874EB0 /* Detail */,
+				9376D9DB24B813B8008C7FD0 /* Profile */,
+				9376D9DA24B813B1008C7FD0 /* Favorite */,
+				9376D9D924B813A9008C7FD0 /* Search */,
+				9376D9D824B813A2008C7FD0 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		933494AA24C8387100944AA9 /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				933494AB24C8388A00944AA9 /* ActorViewModel.swift */,
+			);
+			path = Actor;
+			sourceTree = "<group>";
+		};
 		9376D9A624B7FDD8008C7FD0 = {
 			isa = PBXGroup;
 			children = (
 				9376D9B124B7FDD8008C7FD0 /* MVVM Basic */,
 				9376D9B024B7FDD8008C7FD0 /* Products */,
+				D4EAF13B44DC160F314AAD25 /* Pods */,
+				0696E274B56A7C5391A92510 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9376D9B024B7FDD8008C7FD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9376D9AF24B7FDD8008C7FD0 /* MVVM Basic.app */,
+				9376D9AF24B7FDD8008C7FD0 /* Kho Phim.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +161,129 @@
 		9376D9B124B7FDD8008C7FD0 /* MVVM Basic */ = {
 			isa = PBXGroup;
 			children = (
+				9376D9C924B80916008C7FD0 /* Utility */,
+				9376D9C724B806F6008C7FD0 /* View */,
+				9376D9C624B806EB008C7FD0 /* Model */,
+				9376D9C824B806FF008C7FD0 /* ViewModel */,
 				9376D9B224B7FDD8008C7FD0 /* AppDelegate.swift */,
-				9376D9B424B7FDD8008C7FD0 /* SceneDelegate.swift */,
-				9376D9B624B7FDD8008C7FD0 /* ViewController.swift */,
-				9376D9B824B7FDD8008C7FD0 /* Main.storyboard */,
+				9376D9CC24B80FCE008C7FD0 /* DrasboardViewController.swift */,
+				9376D9CD24B80FCE008C7FD0 /* DrasboardViewController.xib */,
 				9376D9BB24B7FDD9008C7FD0 /* Assets.xcassets */,
 				9376D9BD24B7FDD9008C7FD0 /* LaunchScreen.storyboard */,
 				9376D9C024B7FDD9008C7FD0 /* Info.plist */,
 			);
 			path = "MVVM Basic";
+			sourceTree = "<group>";
+		};
+		9376D9C624B806EB008C7FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9D424B812D3008C7FD0 /* Movie.swift */,
+				9376D9D624B812F4008C7FD0 /* Actor.swift */,
+				93B9739124BD5542009A08B6 /* Result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9376D9C724B806F6008C7FD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9334374E24C14B620009BB11 /* View */,
+				9334374F24C14B6B0009BB11 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9376D9C824B806FF008C7FD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				933494AA24C8387100944AA9 /* Actor */,
+				93B5A1A024BC5B5D00BDC5BB /* Search */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9376D9C924B80916008C7FD0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9F024B88420008C7FD0 /* BaseViewModel.swift */,
+				9376D9CA24B80951008C7FD0 /* Contants.swift */,
+				9376D9ED24B822F5008C7FD0 /* Networks */,
+				9376D9EC24B822BB008C7FD0 /* Extension */,
+				936963C824CCA4CA0094F047 /* RealamManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9376D9D824B813A2008C7FD0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9D024B81256008C7FD0 /* HomeViewController.swift */,
+				9376D9D124B81256008C7FD0 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9376D9D924B813A9008C7FD0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9DC24B813E0008C7FD0 /* SearchViewController.swift */,
+				9376D9DD24B813E0008C7FD0 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		9376D9DA24B813B1008C7FD0 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9E024B813F1008C7FD0 /* FavoriteViewController.swift */,
+				9376D9E124B813F1008C7FD0 /* FavoriteViewController.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		9376D9DB24B813B8008C7FD0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9E424B813FD008C7FD0 /* ProfileViewController.swift */,
+				9376D9E524B813FD008C7FD0 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		9376D9EC24B822BB008C7FD0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9E824B81C16008C7FD0 /* Extension+Codable.swift */,
+				9376D9EA24B81C35008C7FD0 /* Extension+TextField+KeyBoard.swift */,
+				93B9738F24BD4F79009A08B6 /* SwiftMessageManager.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9376D9ED24B822F5008C7FD0 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9EE24B82362008C7FD0 /* Provider.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		93B5A1A024BC5B5D00BDC5BB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				9376D9F224B8849F008C7FD0 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D4EAF13B44DC160F314AAD25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F5774F892154A523F95C7 /* Pods-MVVM Basic.debug.xcconfig */,
+				6F07397CAA6048D43BF9CAE6 /* Pods-MVVM Basic.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9376D9C324B7FDD9008C7FD0 /* Build configuration list for PBXNativeTarget "MVVM Basic" */;
 			buildPhases = (
+				547B170421FEE80071B87AE6 /* [CP] Check Pods Manifest.lock */,
 				9376D9AB24B7FDD8008C7FD0 /* Sources */,
 				9376D9AC24B7FDD8008C7FD0 /* Frameworks */,
 				9376D9AD24B7FDD8008C7FD0 /* Resources */,
+				51F85B76F5C3C7047887DDC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +305,7 @@
 			);
 			name = "MVVM Basic";
 			productName = "MVVM Basic";
-			productReference = 9376D9AF24B7FDD8008C7FD0 /* MVVM Basic.app */;
+			productReference = 9376D9AF24B7FDD8008C7FD0 /* Kho Phim.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,36 +346,95 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933494A924C8370600944AA9 /* ActorCollectionViewCell.xib in Resources */,
+				9376D9E724B813FD008C7FD0 /* ProfileViewController.xib in Resources */,
 				9376D9BF24B7FDD9008C7FD0 /* LaunchScreen.storyboard in Resources */,
 				9376D9BC24B7FDD9008C7FD0 /* Assets.xcassets in Resources */,
-				9376D9BA24B7FDD8008C7FD0 /* Main.storyboard in Resources */,
+				9376D9E324B813F1008C7FD0 /* FavoriteViewController.xib in Resources */,
+				931025DE24BDB69D00874EB0 /* DetailViewController.xib in Resources */,
+				9334375324C14B9E0009BB11 /* MovieCollectionViewCell.xib in Resources */,
+				9376D9CF24B80FCE008C7FD0 /* DrasboardViewController.xib in Resources */,
+				9376D9DF24B813E0008C7FD0 /* SearchViewController.xib in Resources */,
+				9376D9D324B81256008C7FD0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F85B76F5C3C7047887DDC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM Basic/Pods-MVVM Basic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM Basic/Pods-MVVM Basic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM Basic/Pods-MVVM Basic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		547B170421FEE80071B87AE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM Basic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9376D9AB24B7FDD8008C7FD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9376D9B724B7FDD8008C7FD0 /* ViewController.swift in Sources */,
+				9376D9CE24B80FCE008C7FD0 /* DrasboardViewController.swift in Sources */,
+				93B9739024BD4F79009A08B6 /* SwiftMessageManager.swift in Sources */,
+				9376D9DE24B813E0008C7FD0 /* SearchViewController.swift in Sources */,
 				9376D9B324B7FDD8008C7FD0 /* AppDelegate.swift in Sources */,
-				9376D9B524B7FDD8008C7FD0 /* SceneDelegate.swift in Sources */,
+				933494AC24C8388A00944AA9 /* ActorViewModel.swift in Sources */,
+				9376D9CB24B80951008C7FD0 /* Contants.swift in Sources */,
+				933494A824C8370600944AA9 /* ActorCollectionViewCell.swift in Sources */,
+				9376D9EF24B82362008C7FD0 /* Provider.swift in Sources */,
+				9376D9E924B81C16008C7FD0 /* Extension+Codable.swift in Sources */,
+				9376D9EB24B81C35008C7FD0 /* Extension+TextField+KeyBoard.swift in Sources */,
+				931025DD24BDB69D00874EB0 /* DetailViewController.swift in Sources */,
+				9376D9F124B88420008C7FD0 /* BaseViewModel.swift in Sources */,
+				9376D9F324B8849F008C7FD0 /* SearchViewModel.swift in Sources */,
+				9334375224C14B9E0009BB11 /* MovieCollectionViewCell.swift in Sources */,
+				9376D9D724B812F4008C7FD0 /* Actor.swift in Sources */,
+				9376D9D224B81256008C7FD0 /* HomeViewController.swift in Sources */,
+				9376D9E624B813FD008C7FD0 /* ProfileViewController.swift in Sources */,
+				936963C924CCA4CA0094F047 /* RealamManager.swift in Sources */,
+				93B9739224BD5542009A08B6 /* Result.swift in Sources */,
+				9376D9E224B813F1008C7FD0 /* FavoriteViewController.swift in Sources */,
+				9376D9D524B812D3008C7FD0 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9376D9B824B7FDD8008C7FD0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9376D9B924B7FDD8008C7FD0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9376D9BD24B7FDD9008C7FD0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,16 +562,18 @@
 		};
 		9376D9C424B7FDD9008C7FD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9F5774F892154A523F95C7 /* Pods-MVVM Basic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LG7ZHUSRJJ;
 				INFOPLIST_FILE = "MVVM Basic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ndp-dev-tb.MVVM-Basic";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kho Phim";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,16 +581,18 @@
 		};
 		9376D9C524B7FDD9008C7FD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F07397CAA6048D43BF9CAE6 /* Pods-MVVM Basic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LG7ZHUSRJJ;
 				INFOPLIST_FILE = "MVVM Basic/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ndp-dev-tb.MVVM-Basic";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Kho Phim";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

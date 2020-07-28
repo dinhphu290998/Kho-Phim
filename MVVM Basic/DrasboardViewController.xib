@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrasboardViewController" customModule="MVVM_Basic" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="GTV-5t-FXI" id="DDf-3R-lE1"/>
+                <outlet property="tabbar" destination="gNZ-2y-iaF" id="pq9-eD-VR7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTV-5t-FXI">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-2y-iaF">
+                    <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="a9l-Cb-rea"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Trang Chủ" image="browser" selectedImage="browser (1)" id="sqb-Dx-YIO"/>
+                        <tabBarItem tag="1" title="Tìm Kiếm" image="search" selectedImage="search (1)" id="44M-cY-ibO"/>
+                        <tabBarItem tag="2" title="Yêu Thích" image="playlist" selectedImage="playlist (1)" id="8qJ-99-i6I"/>
+                        <tabBarItem tag="3" title="Tài Khoản" image="user" selectedImage="user (1)" id="qhN-Uh-INl"/>
+                    </items>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tabBar>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="GTV-5t-FXI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4hX-9W-1Je"/>
+                <constraint firstItem="GTV-5t-FXI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7a1-y3-PyN"/>
+                <constraint firstItem="gNZ-2y-iaF" firstAttribute="top" secondItem="GTV-5t-FXI" secondAttribute="bottom" id="A0Z-O9-s1E"/>
+                <constraint firstItem="gNZ-2y-iaF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Drw-yT-9mX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GTV-5t-FXI" secondAttribute="trailing" id="ksA-v9-2AZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gNZ-2y-iaF" secondAttribute="bottom" id="wuD-um-Knb"/>
+                <constraint firstItem="gNZ-2y-iaF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yfh-Y2-m6u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="100.2717391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="browser" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="browser (1)" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="playlist" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="playlist (1)" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="search" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="search (1)" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="user" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="user (1)" width="21.333333969116211" height="21.333333969116211"/>
+    </resources>
+</document>
